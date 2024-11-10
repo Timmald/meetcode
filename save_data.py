@@ -15,7 +15,7 @@ for i in obj:
         "tags":i["problem"]["tags"],
         "lang":i["programmingLanguage"],
         "time":i["timeConsumedMillis"],
-        "status":i["verdict"]=="OK",
+        "status":i["verdict"],
         "prob":i["problem"]["name"]
     })
 with open("dataset.json","w") as writer:
